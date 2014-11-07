@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QuickPick</title>
+	<link rel="icon" href="favicon.ico">
+	<!--<link rel="stylesheet" href="//brick.a.ssl.fastly.net/Roboto:200,300,400,500,700,900">-->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/unsemantic-grid-responsive.css">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body class="loading">
+
+	<section id="intro" >
+		<div id="logo">
+			<div class="grid-container" class="grid-25 push-50" ><h1>QUICKPICK</h1></div>
+		</div>
+		<div id="cart" class="grid-container">
+			<img class="grid-40 push-30" src="img/grocerycart.png">
+		</div>
+	</section>
+	<section id="about" class="width">
+		<h1>lorem ipsum donor</h1>
+		<article>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, numquam, ut accusamus doloribus itaque molestiae dolorum eaque saepe aspernatur laboriosam molestias dolorem dolor illo odit odio sunt asperiores deserunt eum temporibus corporis enim sit nobis nostrum delectus labore nisi minus blanditiis atque aliquid necessitatibus laborum et recusandae reprehenderit dicta nemo!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda sit aliquid vero eveniet? Voluptatum, voluptate, veritatis. Impedit placeat neque reprehenderit sunt minus officia itaque officiis.</p>
+		</article>
+	</section>
+	<section id="how" class="width">
+		<div class="grid-container">
+			<div class="grid-33">
+				
+				
+				<h2><i class="fa fa-camera fa-5x"></i> <br>Scan</h2>
+				<article>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, numquam, ut accusamus doloribus itaque molestiae dolorum eaque saepe aspernatur laboriosam</p>
+				</article>
+			</div>
+		</div>
+		<div class="grid-container">
+			<div class="grid-33 push-66">
+				<h2 style="text-align:left!important;"><i class="fa fa-credit-card fa-5x"></i> <br>Pay</h2>
+				<article>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, numquam, ut accusamus doloribus itaque molestiae dolorum eaque saepe aspernatur laboriosam</p>
+				</article>
+			</div>
+		</div>
+		<div class="grid-container">
+			<div class="grid-33">
+				<h2><i class="fa fa-hand-o-up fa-5x"></i> <br>Verify</h2>
+				<article>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, numquam, ut accusamus doloribus itaque molestiae dolorum eaque saepe aspernatur laboriosam</p>
+				</article>
+			</div>
+		</div>
+	</section>
+	
+	<section id="pay" >
+		<div class="grid-container">
+			<div class="grid-25 push-25" style="text-align:center; border-right:#A5C52D solid 3px;">
+				<br><br>
+				<h2>Pay using...</h2>
+			</div>
+			<div class="grid-25 push-30">
+				<img src="img/paymentlogos.png">
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<h1>Coming Soon</h1>
+		<article>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, numquam, ut accusamus doloribus itaque molestiae dolorum eaque saepe aspernatur laboriosam molestias dolorem dolor illo odit odio sunt.</p>
+		</article>
+		<article class="register" >
+			<div class="input-register"><input type="text" placeholder="enter your email address" ></div>
+			<div class="button-register">Let me know!</div> 
+		</article>
+		<br><br><br><br>
+		<p>QuickPick 2014 &middot; Created by <a href="http://baldwynn.me" target="_blank"> David Baldwynn</a> &middot; Design by <a href="http://twitter.com/jamiequaid" target="_blank">Jamie Quade</a></p>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>$.easing.easeInOutCubic = function (x, t, b, c, d) {
+	if ((t/=d/2) < 1) return c/2*t*t*t + b;
+	return c/2*((t-=2)*t*t + 2) + b;
+}
+
+$('header nav a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500, "easeInOutCubic");
+    return false;
+});
+
+$("#faq nav a").click(function(e) {
+	e.preventDefault();
+	$("#faq article").removeAttr("class");
+	$("#faq nav a").removeAttr("class");
+	$($(this).attr("href")).addClass("active");
+	$(this).addClass("active");
+});
+
+function resize() {
+	var width = $(window).width();
+	var height = $(window).height();
+	//$("section").first().css("margin-top", height + "px");
+	//$("#cart").css("margin-top
+	$("#montage a").each(function() {
+		$(this).css("width", width/$(this).siblings().andSelf().length);
+		var $img = $(this).children("img"), height = $(this).height();
+		$img.css("margin", (height - $img.height()) / 2 + "px auto");
+	});
+	$("#montage").removeAttr("class");
+}
+$(window).load(function(){resize();$("body").removeAttr("class")}).resize(resize);</script>
+</body>
+</html>
