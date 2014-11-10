@@ -157,7 +157,7 @@ section h1 {
 
 #intro {
 	margin: 0 auto;
-    	width: 100%;
+    width: 100%;
 	background: #b4cf38;
 	padding-bottom:0px;
 	color:white;
@@ -180,7 +180,7 @@ section h1 {
 		}
 
 #about {
-    	margin: 0 auto;
+    margin: 0 auto;
 	padding-bottom: 100px;
 	background: #3f3f3f;
 	color: white;
@@ -199,15 +199,22 @@ section h1 {
 	margin-bottom: -400px;
 }
 	#how > .grid-container > img {
-		z-index:-21;
+		z-index: -21;
 	}
 	#how .title h2 {
-		color: #b4cf38;
 		border-bottom: #b4cf38 solid 3px;
 		text-align: right;
+		color: #b4cf38;
 	}
-	#how .title-right h2, #how .img-right i {
+	#how .title img{
+		margin-right: 11%;
+	}
+	#how .title-right h2{
 		text-align: left;
+	}
+	#how .title-right img{
+		margin-left: 12%;
+		margin-right: 0;
 	}
 #pay {
 	z-index:99;
