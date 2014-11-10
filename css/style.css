@@ -195,13 +195,22 @@ section h1 {
 		margin: 0 auto;
 	}
 
-#how h2 {
-	color: #b4cf38;
+#how {
+	margin-bottom: -400px;
 }
-#how h2, #how i {
-	text-align: right;
-}
+	#how > .grid-container > img {
+		z-index:-21;
+	}
+	#how .title h2 {
+		color: #b4cf38;
+		border-bottom: #b4cf38 solid 3px;
+		text-align: right;
+	}
+	#how .title-right h2, #how .img-right i {
+		text-align: left;
+	}
 #pay {
+	z-index:99;
     margin-top: 200px;
     font-weight: 200;
 	background: #b4cf38;
