@@ -156,11 +156,14 @@ section h1 {
 }
 
 #intro {
-    margin: 0 auto;
+	 margin: 0 auto;
 	padding-bottom: 0;
-    width: 100%;
+    	width: 100%;
 	background: #b4cf38;
 }
+	#intro #logo .grid-container {
+		padding-bottom:10%;
+	}
 	#intro #logo h1 {
 		font-size:3.2em;
 		color:white;
