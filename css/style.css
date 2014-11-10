@@ -168,7 +168,8 @@ section h1 {
 		#intro #logo h1 {
 			font-size:3.2em;
 			color:white;
-			padding-bottom: 2%;
+			padding-bottom:0px;
+			margin-bottom:0px;
 		}
 		#intro #logo > div {
 			text-align:center;
