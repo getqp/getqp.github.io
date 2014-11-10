@@ -165,8 +165,7 @@ section h1 {
 		color:white;
 		padding-bottom: 2%;
 	}
-	#intro #logo {
-		color:gray;
+	#intro #logo > div {
 		text-align:center;
 		margin-bottom:160px;
 		margin-top:120px;
